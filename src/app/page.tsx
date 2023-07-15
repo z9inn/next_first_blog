@@ -1,3 +1,9 @@
+import Profile from "@/components/Common/Profile/page";
+
 export default function Home() {
-  return <>홈입니다</>;
+  return (
+    <>
+      <Profile />
+    </>
+  );
 }

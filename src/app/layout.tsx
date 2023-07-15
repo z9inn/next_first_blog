@@ -1,5 +1,6 @@
-import Header from "@/components/Header/page";
+import Header from "@/components/Common/Header/page";
 import "./globals.css";
+import StyledComponentsRegistry from "lib/registry";
 
 export default function RootLayout({
   children,
@@ -13,8 +14,10 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <body>
-        <Header />
-        {children}
+        <StyledComponentsRegistry>
+          <Header />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
