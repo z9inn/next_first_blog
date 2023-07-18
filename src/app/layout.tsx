@@ -1,4 +1,5 @@
 import Header from "@/components/Common/Header/page";
+import Footer from "@/components/Common/Footer/page";
 import "./globals.css";
 import StyledComponentsRegistry from "lib/registry";
 
@@ -17,6 +18,7 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <Header />
           {children}
+          <Footer />
         </StyledComponentsRegistry>
       </body>
     </html>
